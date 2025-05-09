@@ -1,0 +1,147 @@
+:root {
+    --color-primary: rgb(249, 235, 210);
+    --color-secondary: rgb(202, 227, 255);
+    --color-accent: rgb(33, 65, 44);
+    --color-accent-2: rgb(255, 201, 39);
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 1.5vw;
+}
+
+h1,
+h2 {
+    font-family: "Sedan", serif;
+}
+
+header {
+    background-color: var(--color-secondary);
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--color-accent);
+    text-align: center;
+    padding: 3vw 0;
+    margin: 0;
+    font-size: 3vw;
+
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+nav ul {
+    background-color: var(--color-accent);
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding: 1vw 0;
+    margin: 0;
+}
+
+
+#nav-menu a {
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 0 3vw;
+}
+
+#nav-menu a:hover {
+    border: 0.2vw solid var(--color-primary);
+    border-radius: 0.5vw;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 0 3vw;
+    width: 90%;
+    margin: 6vw auto;
+    margin-bottom: 4vw;
+}
+
+main .card:nth-of-type(1) {
+    height: 27vw;
+    align-self: center;
+}
+
+.card {
+    border-radius: 1vw;
+    border: 0.2vw solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.card p {
+    margin: 0 2vw;
+}
+
+#mypicture {
+    float: right;
+    margin: 0 4vw;
+    height: 18vw;
+    border: 0.5vw solid var(--color-accent);
+    border-radius: 1vw;
+}
+
+figure {
+    display: block;
+    margin: 1vw auto;
+    justify-items: center;
+}
+
+#flag {
+    height: 12vw;
+    border-radius: 1vw;
+}
+
+figcaption {
+    font-size: 1vw;
+    text-align: center;
+    font-style: italic;
+}
+
+.card-header {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    margin-top: 0;
+    text-align: center;
+    padding: 0.5vw 0;
+    border-top-right-radius: 0.8vw;
+    border-top-left-radius: 0.8vw;
+
+}
+
+footer {
+    background-color: var(--color-accent);
+    text-align: center;
+    padding: 1.5vw 0 0.8vw;
+}
+
+footer p:nth-of-type(1) {
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+footer p:nth-of-type(2) {
+    margin: 0.5vw 0 0;
+    color: var(--color-primary);
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+
+#currentyear {
+    color: var(--color-accent-2);
+    font-weight: 700;
+}
