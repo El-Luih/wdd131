@@ -65,7 +65,7 @@ main {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: 0 3vw;
-    width: 90%;
+    max-width: 90%;
     margin: 6vw auto;
     margin-bottom: 4vw;
 }
@@ -83,6 +83,10 @@ main .card:nth-of-type(1) {
 
 .card p {
     margin: 0 2vw;
+}
+
+.card a {
+    color: var(--color-accent);
 }
 
 #mypicture {
