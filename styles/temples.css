@@ -33,7 +33,7 @@ footer {
 }
 
 #hamburguer.open {
-    top: 1.6rem;
+    top: 1.3rem;
 }
 
 #hamburguer::before {
@@ -48,7 +48,7 @@ footer {
     font-size: 1.6rem;
     color: white;
     position: absolute;
-    top: 1.3rem;
+    top: 1rem;
     right: 1rem;
 }
 
@@ -96,7 +96,7 @@ main {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
 }
 
