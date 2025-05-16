@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     body {
         width: 100%;
     }
@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     #album-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-rows: repeat(3, minmax(0, 1fr));
