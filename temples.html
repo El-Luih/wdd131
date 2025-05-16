@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Temples Album</title>
+    <meta name="description" content="A collection of temples and an example of responsive design.">
+    <meta name="author" content="Luis Maradiaga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        Temple Album
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="hamburguer"></button>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="album-grid">
+            <figure>
+                <img src="images/aba-nigeria.jpg" alt="Temple 1">
+                <figcaption>Aba, Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana.jpg" alt="Temple 2">
+                <figcaption>Accra, Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/adelaide-australia.jpg" alt="Temple 3">
+                <figcaption>Adelaide, Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-new-mexico.jpg" alt="Temple 4">
+                <figcaption>Alburquerque, New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/anchorage-alaska.jpg" alt="Temple 5">
+                <figcaption>Anchorage, Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/arequipa-peru.jpeg" alt="Temple 6">
+                <figcaption>Arequipa, Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta-georgia.jpg" alt="Temple 7">
+                <figcaption>Atlanta, Georgia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/barranquilla-colombia.jpg" alt="Temple 8">
+                <figcaption>Barranquilla, Colombia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/baton-rouge-louisiana.jpeg" alt="Temple 9">
+                <figcaption>Baton Rouge, Louisiana Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Luis Alejandro Maradiaga Ruiz - Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+:root {
+    --primary-color: rgb(95, 103, 45);
+    --secondary-color: rgb(55, 59, 25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+header {
+    font-size: 2rem;
+}
+
+#hamburguer.open::before {
+    content: "X";
+}
+
+#hamburguer.open {
+    top: 1.3rem;
+}
+
+#hamburguer::before {
+    content: "☰";
+    display: block;
+}
+
+#hamburguer {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    font-size: 1.6rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+
+#nav-menu li {
+    flex: 1 1 auto;
+    display: none;
+}
+
+#nav-menu li a:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+#nav-menu.active {
+    flex-flow: column nowrap;
+    margin-top: 2rem;
+
+}
+
+#nav-menu.active li {
+    display: block;
+}
+
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+    color: var(--primary-color);
+}
+
+img {
+    width: 22rem;
+    height: 14rem;
+}
+
+figure {
+    margin-bottom: 3rem;
+}
+
+figcaption {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
