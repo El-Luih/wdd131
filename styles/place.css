@@ -1,0 +1,162 @@
+:root {
+    --primary-color: rgb(0, 31, 90);
+    --secondary-color: rgb(254, 254, 254);
+    --fade-color: rgba(254, 254, 254, 0.705);
+    --accent-color: rgb(185, 11, 46);
+}
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Marcellus", serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Uncial Antiqua", system-ui;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.8rem;
+    border-bottom: 1rem solid var(--accent-color);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#hero-image {
+    display: block;
+
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.7rem solid var(--primary-color);
+}
+
+#table-holder {
+    margin-bottom: 2rem;
+}
+
+table {
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+caption {
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+th {
+    text-align: end;
+    width: 10rem;
+}
+
+td {
+    text-align: start;
+    width: 10rem;
+}
+
+
+
+#weather-section h2 {
+    text-align: center;
+}
+
+
+#weather-section img {
+    display: block;
+    width: 7rem;
+    margin-top: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+@media screen and (min-width: 500px) {
+    #hero-image {
+        background-color: var(--primary-color);
+    }
+
+    #hero-image img {
+        border: none;
+    }
+
+
+    main {
+        position: relative;
+    }
+
+    #table-holder {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        max-width: 25rem;
+        background-color: var(--fade-color);
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #data-table {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #data-table caption {
+        background-color: var(--accent-color);
+        padding: 1rem 0;
+        margin-left: -1.2rem;
+        color: var(--secondary-color);
+        margin-bottom: 2rem;
+    }
+
+    #weather-section {
+        background-color: var(--fade-color);
+        max-width: 20rem;
+        position: absolute;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #weather-section h2 {
+        margin-bottom: 2rem;
+        background-color: var(--accent-color);
+        padding: 1rem 0;
+        margin-left: -1.2rem;
+        color: var(--secondary-color);
+    }
+
+    #weather-section h2::before {
+        content: "🌧️";
+    }
+
+    #weather-section img {
+        display: none;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+}

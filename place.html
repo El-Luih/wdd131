@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Norway | WDD 131</title>
+    <meta name="description" content="A simple website with general information about a random place or country 
+        (Norway in this case) with the purpose of demonstrating my understanding of the content of this week.">
+    <meta name="author" content="Luis Maradiaga">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Norway</h1>
+    </header>
+    <main>
+        <picture id="hero-image">
+            <source srcset="images/hero-wide.webp" media="(min-width: 500px)">
+            <img src="images/hero-long.webp" alt="Norwegian Fjord">
+        </picture>
+        <div id="table-holder">
+            <table id="data-table">
+                <caption>Data</caption>
+                <tr>
+                    <th scope="row">Area:</th>
+                    <td>385,207 km²</td>
+                </tr>
+                <tr>
+                    <th scope="row">Population:</th>
+                    <td>5,514,042</td>
+                </tr>
+                <tr>
+                    <th scope="row">Capital:</th>
+                    <td>Oslo</td>
+                </tr>
+                <tr>
+                    <th scope="row">Languages:</th>
+                    <td>Norweigan</td>
+                </tr>
+                <tr>
+                    <th scope="row">Currency:</th>
+                    <td>Norwegian Krone (kr)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Time Zone:</th>
+                    <td>GMT+1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Calling Code:</th>
+                    <td>+47</td>
+                </tr>
+                <tr>
+                    <th scope="row">Internet TLD:</th>
+                    <td>.no</td>
+                </tr>
+            </table>
+        </div>
+        <div id="weather-section">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Logo">
+            <table id="wather-table">
+                <tr>
+                    <th scope="row">Temperature:</th>
+                    <td id="temp-cell"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Conditions:</th>
+                    <td id="condition-cell">Light Rain</td>
+                </tr>
+                <tr>
+                    <th scope="row">Winds:</th>
+                    <td id="wind-cell"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Wind Chill:</th>
+                    <td id="chill-cell"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Luis Alejandro Maradiaga Ruiz - Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
