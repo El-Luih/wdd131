@@ -147,7 +147,7 @@ footer {
         color: var(--secondary-color);
     }
 
-    #weather-section h2::before {
+    #weather-section h2::after {
         content: "🌧️";
     }
 
