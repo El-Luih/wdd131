@@ -10,7 +10,9 @@ windSpeedCell.innerHTML = `${windSpeed} km/h`;
 
 if (temperature <= 10 && windSpeed > 4.8) {
     let windChill = calculatWindChill(temperature, windSpeed);
-    windChillCell.innerHTML = `${windChill.toFixed(2    )}°C`
+    windChillCell.innerHTML = `${windChill.toFixed(2)}°C`
+} else {
+    windChillCell.innerHTML = `N/A`
 }
 
 function calculatWindChill(temperature, windSpeed) {
