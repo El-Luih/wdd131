@@ -1,0 +1,39 @@
+table {
+    border: thin solid rgba(0, 0, 0, 0.24);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+thead {
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+th {
+    padding: 0.8rem;
+    border: thin solid rgba(0, 0, 0, 0.24);
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    border: thin solid rgba(0, 0, 0, 0.24);
+}
+
+#table-title {
+    background-color: black;
+    color: white;
+}
+
+#blank-cell {
+    background-color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgrey;
+}
