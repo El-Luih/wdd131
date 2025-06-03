@@ -1,0 +1,66 @@
+@media screen and (min-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+
+    #hamburguer {
+        display: none;
+    }
+
+
+    #nav-menu,
+    #nav-menu.active {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 0;
+    }
+
+    #nav-menu li {
+        display: block;
+        height: 100%;
+    }
+
+    #nav-menu li a {
+        background-color: white;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--secondary-color);
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav-menu li a:hover {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #album-grid {
+        margin: 2rem auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        place-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #album-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+}

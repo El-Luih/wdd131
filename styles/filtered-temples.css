@@ -1,0 +1,135 @@
+:root {
+    --primary-color: rgb(95, 103, 45);
+    --fade-primary-color: rgba(183, 207, 24, 0.26);
+    --secondary-color: rgb(41, 44, 15);
+    --fade-secondary-color: rgba(41, 44, 15, 0.329);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+
+
+#hamburguer.open::before {
+    content: "X";
+}
+
+#hamburguer.open {
+    top: 1.3rem;
+}
+
+#hamburguer::before {
+    content: "☰";
+    display: block;
+}
+
+#hamburguer {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    font-size: 1.6rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+
+#nav-menu li {
+    flex: 1 1 auto;
+    display: none;
+}
+
+#nav-menu li a:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+#nav-menu.active {
+    flex-flow: column nowrap;
+    margin-top: 2rem;
+
+}
+
+#nav-menu.active li {
+    display: block;
+}
+
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    place-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+    color: var(--secondary-color);
+}
+
+#album-header {
+    font-size: 2rem;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin-top: 1.5rem;
+    box-shadow: 2px 2px 4px 1.5px var(--fade-secondary-color), -2px -2px 4px 1.5px var(--fade-secondary-color);
+}
+
+
+
+
+.card {
+    background-color: var(--fade-primary-color);
+    width: 80%;
+    height: 98%;
+    padding-bottom: 1.5rem;
+    border: thin solid var(--fade-secondary-color);
+    color: var(--secondary-color);
+}
