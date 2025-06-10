@@ -1,0 +1,179 @@
+:root {
+    --primary-color: rgb(46, 63, 78);
+    --secondary-color: rgb(37, 50, 65);
+    --third-color: rgb(54, 73, 89);
+    --accent-color: rgb(36, 165, 137);
+    --accent-color-2: rgb(225, 0, 45);
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+form {
+    box-sizing: border-box;
+}
+
+h1,
+footer,
+form,
+.confirmation-message {
+    border: 2px solid var(--third-color);
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+h1,
+footer,
+.confirmation-message {
+    text-align: center;
+    font-weight: 400;
+}
+
+.confirmation-message {
+    font-size: 2.5rem;
+    padding: 10rem 0;
+}
+
+label,
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="submit"],
+select,
+textarea,
+.options-field {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.8rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    background-color: var(--secondary-color);
+}
+
+
+select,
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+    height: 50px;
+}
+
+#radio-group {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+}
+
+#radio-group label {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+#radio-group label::before {
+    content: "\2606";
+}
+
+#radio-group input:checked~label::before {
+    content: "\2605";
+    color: var(--accent-color);
+}
+
+#radio-group label:hover {
+    color: var(--accent-color);
+}
+
+#checkbox-group {
+    display: flex;
+    flex-flow: column;
+}
+
+#checkbox-group label {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 100;
+    height: 40px;
+}
+
+input[type="checkbox"] {
+    height: 14px;
+    width: 14px;
+    margin-right: 0.5rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.field-name {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+select:required,
+input:required,
+.required {
+    border: 2px solid var(--accent-color-2);
+}
+
+select:required:valid,
+input:required:valid,
+.valid {
+    border: 1px solid var(--accent-color);
+}
+
+.options-field {
+    background-color: var(--third-color);
+}
+
+footer {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 350;
+    margin: 4rem auto 0.5rem;
+    width: 94%;
+}
+
+.optional::after {
+    content: "(optional)";
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}

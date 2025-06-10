@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Product Review Form - Luis Maradiaga</title>
+    <meta name="description" content="A Product Review Form built following form design best practices.">
+    <meta name="author" content="Luis Maradiaga">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html">
+        <label class="field-name" for="product-selection">Product Name*</label>
+        <select name="product" id="product-selection" required>
+            <option value="" disabled selected>Select a Product</option>
+        </select>
+
+        <h2 class="field-name">Overall Rating*</h2>
+        <div class="options-field required" id="radio-group">
+            <input type="radio" id="one-star" name="star-rating" value="1" required><label for="one-star"></label>
+            <input type="radio" id="two-star" name="star-rating" value="2" required><label for="two-star"></label>
+            <input type="radio" id="three-star" name="star-rating" value="3" required><label for="three-star"></label>
+            <input type="radio" id="four-star" name="star-rating" value="4" required><label for="four-star"></label>
+            <input type="radio" id="five-star" name="star-rating" value="5" required><label for="five-star"></label>
+        </div>
+        <label class="field-name" for="installation-date">Date of Installation*</label>
+        <input type="date" name="installation-date" id="installation-date" required>
+        <h2 class="field-name">Features you found useful:</h2>
+        <div class="options-field" id="checkbox-group">
+            <label><input type="checkbox" name="durability" value="durability" id="durability-check">Durability</label>
+            <label><input type="checkbox" name="easy" value="easy" id="easy-check">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="performance"
+                    id="performance-check">Performance</label>
+            <label><input type="checkbox" name="design" value="design" id="design-check">Design</label>
+        </div>
+        <label class="field-name optional" for="review-text">Written Review </label>
+        <textarea name="review" id="review-text" rows="5" placeholder="Write your review here..."></textarea>
+
+        <label class="field-name optional" for="username">User Name </label>
+        <input type="text" name="username" id="username">
+
+        <input type="submit" value="Post Review" id="submit-button">
+    </form>
+    <footer>
+        <p>©<span id="currentyear"></span> Luis Alejandro Maradiaga Ruiz - Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
