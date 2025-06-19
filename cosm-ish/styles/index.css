@@ -1,0 +1,322 @@
+
+:root {
+    --primary-color: #08070c;
+    --secondary-color: #FFD700;
+    --third-color: #1f1f1f;
+    --accent-color: #8A2BE2;
+    --text-color:#F8F8F8;
+    --primary-font: 'Courier New', Courier, monospace;
+    --fading-third-color: rgba(51, 51, 51, 0.6);
+    --secondary-font: "Pacifico", cursive;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3.8vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 1.5vw 2vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    margin-top: 2vw;
+}
+
+
+.hero-section {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 7rem;
+}
+
+#hero-header, #about-section, #buy-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: auto;
+}
+
+#hero-image img, #about-image img, #buy-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+#hero-image, #about-image, #buy-image {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+}
+
+#hero-text, #about-text, #buy-text {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--fading-third-color);
+    padding: 4vw; 
+}
+
+#hero-text p {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+#about-text, #buy-text {
+    width: 70%;
+}
+
+#about-text p, #buy-text p, #disclaimer-article p, #reviews-section p, #reviews-section cite {
+    font-size: 1.5vw;
+    font-weight: 550;
+    margin-top: 2vw;
+    word-break: break-word;
+}
+
+
+#disclaimer-article {
+    width: 60%;
+    text-align: center;
+    margin: 15rem auto;
+    border: var(--secondary-color) 0.1rem solid;
+    padding: 1.5rem;
+}
+
+#disclaimer-article img {
+    height: 4rem;
+    margin-top: 1.5rem;
+}
+
+
+#reviews-section {
+    width: 80%;
+    margin-top: 15rem;
+}
+
+#others-reviews {
+    margin: 4rem auto 8rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.review {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.review img {
+    width: 50%;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5vw;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+
+#your-review {
+    width: 56%;
+    max-width: 600px;
+    padding-top: 3rem;
+    border-top: var(--secondary-color) 0.1vw solid;
+}
+
+#form-title {
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+#review-form, #form-title{
+    border: var(--secondary-color) thin solid;
+    background-color: var(--primary-color);
+}
+
+#review-form label, 
+input[type='text'], 
+#review-form textarea, 
+.options-field {
+    display: block;
+    width: 94%;
+    text-align: left;
+}
+
+label[for='name'], 
+label[for='last-name'], 
+label[for='review'], 
+h4, 
+input[type='submit'] {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    appearance: none;
+    font-family: var(--primary-font);
+}
+
+input[type='text'], 
+input[type='radio'] {
+    height: 40px;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.6rem;
+}
+
+.radio-label {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+#review-form h4{
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 94%;
+}
+
+input[type='submit'] {
+    color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+input[type='text'], 
+#review-form textarea, 
+.options-field {
+    background-color: var(--primary-color);
+    border: var(--secondary-color) thin solid;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.options-field {
+    padding: 0.5rem 0 1rem;
+}
+
+input[type='text'], 
+#review-form textarea {
+    padding: 0.5rem  0.5rem;
+    font-family: var(--primary-font);
+}
+
+
+#thanks-message {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20rem 0;
+    text-align: center;
+}
+
+
+#review-form input:required:invalid,
+#review-form textarea:required:invalid {
+    border-color: red !important;
+}
+
+
+#review-form input:required:invalid ~ .input-label,
+#review-form textarea:required:invalid ~ .input-label {
+    color: red !important;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #hero-text p, #about-text p, #buy-text p, #disclaimer-article p, #reviews-section p, #reviews-section cite {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 5.4vw;
+    }
+
+    #others-reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25vw auto;
+        grid-template-rows: auto 20%;
+    }
+
+    .review img {
+        width: 20vw;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        box-sizing: border-box;
+    }
+
+    .review cite {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: 1rem;
+        box-sizing: border-box;
+    }
+
+    .review p {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+
+    a.button {
+        font-size: 3vw;
+        padding: 2vw 3vw;
+    }
+
+    #review-form {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #your-review {
+        width: 100%;
+    }
+
+    #reviews-section {
+        width: 90%;
+        margin: 10rem auto;
+    }
+
+    .hero-section {
+        margin-bottom: 5rem;
+    }
+
+}
+

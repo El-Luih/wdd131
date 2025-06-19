@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">                                                      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Cosm-ish - Contact</title>
+    <meta name="page-id" content="contact-page">
+    <meta name="author" content="Luis Maradiaga">
+    <meta name="description" content="A simple HTML page for WDD 131 class assignment.">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/contact-sale.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/contact-sale.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="hide">
+            <img src="images/logo.svg" alt="Cosm-ish Logo" class="logo" loading="lazy">
+            <button id="ham-menu" class="button inactive" aria-label="Hamburger Menu"></button>
+            <nav id="nav-menu" class="hide">
+                <ul id="nav-list" class="hide">
+                    <li><a id="index-page" href="index.html">Home</a></li>
+                    <li><a id="stars-page" href="stars.html">Catalog</a></li>
+                    <li><a id="contact-page" href="contact-sale.html">Purchase Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contact-sale-section">
+                <h1>Buy Your Star</h1>
+                <form id="contact-sale-form" action="thanks-contact.html" method="get">
+                    <label for="star-select">Choose your star*:</label>
+                    <select id="star-select" name="star" required>
+                        <option value="">Select a star...</option>
+                    </select>
+
+                    <label for="first-name">First Name*:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name*:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="payment-date">Date of Payment*:</label>
+                    <input type="date" id="payment-date" name="payment-date" required>
+
+                    <input type="submit" class="button" value="Buy Star">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Cosm-ish | Luis Maradiaga</p>
+            <nav class="social-media">
+                <a href="https://www.facebook.com" class="image-link">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" class="image-link">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.pinterest.com/" class="image-link">
+                    <img src="images/pinterest.svg" alt="Pinterest">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
