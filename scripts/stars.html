@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">                                                      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Cosm-ish - Stars</title>
+    <meta name="page-id" content="stars-page">
+    <meta name="author" content="Luis Maradiaga">
+    <meta name="description" content="Explore our catalog of stars and find the perfect one for you or as a gift.">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/stars.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/stars.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header class="hide">
+            <img src="images/logo.svg" alt="Cosm-ish Logo" class="logo" loading="lazy">
+            <button id="ham-menu" class="button inactive" aria-label="Hamburger Menu"></button>
+            <nav id="nav-menu" class="hide">
+                <ul id="nav-list" class="hide">
+                    <li><a id="index-page" href="index.html">Home</a></li>
+                    <li><a id="stars-page" href="stars.html">Catalog</a></li>
+                    <li><a id="contact-page" href="contact-sale.html">Purchase Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="stars-header">
+                <h1>Choose your star!</h1>
+                <p>Explore our catalog of stars and find the perfect one for you or as a gift.</p>
+            </article>
+
+            <form id="star-filters" class="star-filters">
+                <label>
+                    Name:
+                    <select id="filter-name">
+                        <option value="">All</option>
+                    </select>
+                </label>
+                <label>
+                    Type:
+                    <select id="filter-type">
+                        <option value="">All</option>
+                    </select>
+                </label>
+                <label>
+                    Distance:
+                    <select id="filter-distance">
+                        <option value="">All</option>
+                        <option value="far">Far (&gt;10 LY)</option>
+                        <option value="very-far">Very Far (&gt;1000 LY)</option>
+                        <option value="cant-see">You-can't-even-see-it far (&gt;100000 LY)</option>
+                    </select>
+                </label>
+                <label>
+                    Constellation:
+                    <select id="filter-constellation">
+                        <option value="">All</option>
+                    </select>
+                </label>
+                <label>
+                    Age:
+                    <select id="filter-age">
+                        <option value="">All</option>
+                        <option value="young">Kind of young (&lt;1 Myr)</option>
+                        <option value="old">Old (&gt;5 Myr)</option>
+                        <option value="extremely-old">Extremely old (&gt;10 Myr)</option>
+                    </select>
+                </label>
+                <label>
+                    Mass:
+                    <select id="filter-mass">
+                        <option value="">All</option>
+                        <option value="small">Small (&lt;1 M☉)</option>
+                        <option value="average">Average (&gt;1 M☉)</option>
+                        <option value="big">Big (&gt;10 M☉)</option>
+                        <option value="super-big">Super big (&gt;50 M☉)</option>
+                        <option value="hyper-giants">Hyper giants (&gt;100 M☉)</option>
+                    </select>
+                </label>
+                <label>
+                    Availability:
+                    <select id="filter-availability">
+                        <option value="">All</option>
+                        <option value="available">For Sale</option>
+                    </select>
+                </label>
+            </form>
+            <section id="star-cards">
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Cosm-ish | Luis Maradiaga</p>
+            <nav class="social-media">
+                <a href="https://www.facebook.com" class="image-link">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" class="image-link">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.pinterest.com/" class="image-link">
+                    <img src="images/pinterest.svg" alt="Pinterest">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
