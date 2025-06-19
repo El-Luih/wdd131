@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">                                                      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Cosm-ish - Home</title>
+    <meta name="page-id" content="index-page">
+    <meta name="author" content="Luis Maradiaga">
+    <meta name="description" content="Welcome to Cosm-ish, your gateway to the cosmos. Explore our catalog of stars, learn about us, and share your experiences.">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hide">
+        <img src="images/logo.svg" alt="Cosm-ish Logo" class="logo" loading="lazy">
+        <button id="ham-menu" class="button inactive" aria-label="Hamburger Menu"></button>
+        <nav id="nav-menu" class="hide">
+            <ul id="nav-list" class="hide">
+                <li><a id="index-page" href="index.html">Home</a></li>
+                <li><a id="stars-page" href="stars.html">Catalog</a></li>
+                <li><a id="contact-page" href="contact-sale.html">Purchase Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section id="hero-header" class="hero-section">
+            <picture id="hero-image">
+                <source srcset="images/hero-image-short.webp" media="(max-width: 700px)">
+                <img src="images/hero-image-wide.webp" alt="Hero Image" loading="lazy">
+            </picture>
+
+            <div id="hero-text">
+                <h1>Welcome to <span class="aesthetic">Cosm-ish</span></h1>
+                <p>Your gateway to the cosmos.</p>
+                <a id="catalog-button" class="button" aria-label="Catalog Button" href="stars.html">Explore More</a>
+            </div>
+        </section>
+
+
+        <section id="about-section" class="hero-section">
+            <picture id="about-image">
+                <source srcset="images/about-image-short.webp" media="(max-width: 700px)">
+                <img src="images/about-image-wide.webp" alt="About Us Image" loading="lazy">
+            </picture>
+
+            <div id="about-text">
+                <h2>About Us</h2>
+                <p>At Cosm-ish, we offer a fun and symbolic way to “claim” a star. Whether it’s for yourself or as a gift, it’s a lighthearted gesture meant to bring a smile and create a memorable moment.     
+                </p>
+            </div>
+        </section>
+
+        <div id="disclaimer-article">
+            <h2>Disclaimer</h2>
+            <img src="images/warning.svg" alt="Warning Icon" loading="lazy">
+            <p>It's important to note that this is a non-official, symbolic acquisition, 
+                designed purely for fun, as a unique joke, or as a memorable gag gift.
+            </p>
+        </div>
+
+
+        <section id="buy-section" class="hero-section">
+            <picture id="buy-image">
+                <source srcset="images/buy-samples-short.webp" media="(max-width: 700px)">
+                <img src="images/buy-samples-wide.webp" alt="Star Samples Image" loading="lazy">
+            </picture>
+
+            <div id="buy-text">
+                <h2>Already something in mind?</h2>
+                <p>If you already have a specific star in mind, you can go directly to the form to place your order. You can always check our catalog before making a decision!</p>
+                <a href="contact-sale.html" class="button">Buy a Star</a>
+            </div>
+        </section>
+
+
+        <section id="reviews-section" class="hero-section">
+            <h2>What our customers say</h2>
+            <div id="others-reviews">
+                <article class="review">
+                    <img src="images/male-icon.svg" alt="Male User Icon" class="user-icon" loading="lazy">
+                    <p>"I bought a star for my girlfriend and she loved it! It was a unique gift that made our anniversary special."</p>
+                    <cite>- Alex M.</cite>
+                </article>
+                <article class="review">
+                    <img src="images/male-icon.svg" alt="Male User Icon" class="user-icon" loading="lazy">
+                    <p>"Cosm-ish made it so easy to claim a star. The process was fun and the certificate is a great keepsake."</p>
+                    <cite>- Jamie L.</cite>
+                </article>
+                <article class="review">
+                    <img src="images/female-icon.svg" alt="Female User Icon" class="user-icon" loading="lazy">
+                    <p>"I got a star for my best friend’s birthday. It was a hilarious and memorable gift that we still talk about!"</p>
+                    <cite>- Taylor R.</cite>
+                </article>
+            </div>
+
+            <div id="your-review">
+                <div id="form-title">        
+                    <h3>Share your experience</h3>
+                    <p>We would love to hear from you! Share your thoughts and experiences with us.</p>
+                </div>
+                <form id="review-form" action="thanks.html" method="get">
+                    <label class='input-label' for="name">Name*:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label class='input-label' for="last-name">Last Name*:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <h4 class='input-label'>Gender*:</h4>
+                    <div class="options-field">
+                        <label class="radio-label" for="female"><input type="radio" id="female" name="gender" value="female" required>Female</label>
+                        <label class="radio-label" for="male"><input type="radio" id="male" name="gender" value="male" required>Male</label>
+                    </div>
+
+                    <label for="review" class='input-label'>Review*:</label>
+                    <textarea id="review" name="review" rows="5" required></textarea>
+                    <input type="submit" class="button" value="Post Your Review!">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Cosm-ish | Luis Maradiaga</p>
+        <nav class="social-media">
+            <a href="https://www.facebook.com" class="image-link">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" class="image-link">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.pinterest.com/" class="image-link">
+                <img src="images/pinterest.svg" alt="Pinterest">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
